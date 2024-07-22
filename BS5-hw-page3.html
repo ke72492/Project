@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="./CSS/BS5-hw-page3.css">
+</head>
+
+<body>
+  <nav class="my-px navbar navbar-expand-lg bg-body-tertiary">
+    <!-- <nav class="navbar navbar-expand-sm bg-dark border-bottom border-body" data-bs-theme="dark">   -->
+    <div class="container-fluid">
+      <div>
+        <a class="navbar-brand" href="#">
+          <img src="./Img/lovepik-shop-png-image_400233775_wh1200.png" alt="Bootstrap" width="80" height="50">
+        </a>
+
+      </div>
+      <!-- 漢堡按鈕 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a class="nav-link" href="#"><i class="bi bi-cart-fill me-3"></i></a>
+
+          <div class="dropdown">
+            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button> -->
+            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false"><i
+                class="bi bi-person-circle"></i></a>
+            <ul id="my-margin" class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+
+            </ul>
+          </div>
+          <!-- <button type="button" class="btn btn-outline-primary btn-sm" disabled>Primary</button> -->
+        </form>
+      </div>
+    </div>
+
+  </nav>
+  <main>
+    <div class="my-container">
+      <div class="px-3 py-3 my-container-normal">
+        <h2>購物車</h2>
+        <div class="d-flex ms-sm-5">
+          <div class="col-3 px-1 py-5 d-flex flex-column justify-content-center align-items-left">
+            <div class="position-relative w-100 ps-2">
+              <div class="my-circle my-circle-1 rounded-circle bg-success">
+                1
+
+              </div>
+              <div class="my-progress progress">
+                <div class="progress-bar w-100 bg-success"></div>
+              </div>
+            </div>
+            <h5 class="">確認購物車</h5>
+          </div>
+
+          <div class="col-3 px-1 py-5 d-flex flex-column justify-content-center align-items-left">
+            <div class="position-relative w-100 ps-2">
+              <div class="my-circle my-circle-2 rounded-circle bg-white">
+                2
+
+              </div>
+              <div class="my-progress progress">
+                <div class="progress-bar w-100 bg-success"></div>
+              </div>
+            </div>
+            <h5 class="">付款與運送方式</h5>
+          </div>
+
+          <div class="col-3 px-1 py-5 d-flex flex-column justify-content-center align-items-left">
+            <div class="position-relative w-100 ps-2">
+              <div class="my-circle my-circle-2 rounded-circle bg-white">
+                3
+
+              </div>
+              <div class="my-progress progress">
+                <div class="progress-bar w-25 bg-success"></div>
+              </div>
+            </div>
+            <h5 class="">填寫資料</h5>
+          </div>
+
+          <div class="col-3 px-1 py-5 d-flex flex-column justify-content-center align-items-left">
+            <div class="position-relative w-100 ps-2">
+              <div class="my-circle my-circle-2 rounded-circle bg-white">
+                4
+
+              </div>
+              <div class="my-progress my-color progress">
+                <!-- <div class="progress-bar w-25 bg-success"></div> -->
+              </div>
+            </div>
+            <h5 class="">完成訂購</h5>
+          </div>
+
+        </div>
+
+
+        <hr class="mt-0">
+        <section class="my-paragraph" py-5>
+          <h2>寄送資料
+          </h2>
+          <h5>姓名
+          </h5>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="王小明" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <h5>電話
+          </h5>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="0912345678" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <h5>Email
+          </h5>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="abc123@gmail.com" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <h5>地址
+          </h5>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control my-input" placeholder="城市" aria-label="Username"
+              aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="郵遞區號" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <div>
+            <input type="text" class="form-control" placeholder="地址" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="my-5"></div>
+          <hr>
+
+          <div class="d-flex">
+            <ul class="my-margin justify-content-end my-result">
+              <li class="list-group-item d-flex">數量:
+                <div class="my-move">3</div>
+              </li>
+              <li class="list-group-item d-flex">小計:
+                <div class="my-move">$56.50</div>
+              </li>
+              <li class="list-group-item d-flex">運費:
+                <div class="my-move">$20.90</div>
+              </li>
+              <li class="list-group-item d-flex">總計:
+                <div class="my-move">$77.40</div>
+              </li>
+            </ul>
+
+          </div>
+          <hr class="mt-0">
+
+          <div class="d-flex justify-content-between px-5">
+            <button class="my-back" id="back-btn">上一步</button>
+            <button class="my-button" id="next-btn">前往付款</button>
+          </div>
+
+      </div>
+
+      </section>
+
+
+
+    </div>
+    </div>
+
+
+  </main>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-6 py-1 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <a class="navbar-brand" href="#">
+          <img src="./Img/lovepik-shop-png-image_400233775_wh1200.png" alt="Bootstrap" width="80" height="50">
+        </a>
+        <p class="text-body-secondary">我們致力於提供高品質的家具選擇，滿足您的居家裝飾需求。馬上探索我們的產品，發現您理想的家居風格！</p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3">
+        <h5>關於網站</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">公司背景</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">團隊成員</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">聯絡方式</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">常見問題</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>服務和支持</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">送貨策略</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">退貨流程</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">隱私條款</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">客戶服務</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>商品訊息</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">產品種類</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">材料和工藝</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">尺寸和顏色</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">評論和評價</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>追蹤我們</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">社交媒體</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">最新消息</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">促銷活動</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">客戶反饋</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2020 Tailblocks—@knyttneve</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+    <script>
+      const backBtn=document.querySelector('#back-btn');
+      const nextBtn=document.querySelector('#next-btn');
+
+      backBtn.addEventListener('click',function(){
+        window.location.href='BS5-hw-page2.html';
+      });
+
+      nextBtn.addEventListener('click',function(){
+        window.location.href='BS5-hw-page4.html';
+      });
+    </script>
+</body>
+
+</html>
